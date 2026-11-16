@@ -1,0 +1,4 @@
+# Adopted from HorizonCloudy/plugin-forge: Python stays LF (a CR CR LF once doubled its own reported line numbers).
+*.py text eol=lf
+# Every other text file too: this repository ships upstream files byte for byte, and a CRLF checkout would make that claim false.
+* text=auto eol=lf

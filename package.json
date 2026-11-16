@@ -1,0 +1,37 @@
+{
+  "name": "neko-plugin-forge-dsh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The plugin-forge expert team as a DeepSeek Harness plugin: paradigm skill for any host platform (with the N.E.K.O profile), subagent personas, contract gate, and security audit.",
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "skills/**/*",
+    "agents/**/*.md",
+    "agents/**/*.json",
+    "docs/**/*.md",
+    "licenses/*",
+    "DETAIL.md",
+    "AUDIT.md",
+    "README.md",
+    "NOTICE.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
